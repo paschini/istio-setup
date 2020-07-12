@@ -1,8 +1,8 @@
 # This is how you get the apps in your MicroK8s cluster to respond to domain names on the interwebs.
 
-Apart from enabling Istio, Ingress, DNS and MetalLB on your MicroK8s cluster, you need to setup a service, istio gateway and vistual service from every app. The examples here also show how to up different routes for the apps.
+Apart from enabling Istio, Ingress, DNS and MetalLB on your MicroK8s cluster, you need to setup a service, istio gateway and virtual service from every app. The examples here also show how to up different routes for the apps.
 
-The Bookinfo example was taken from the Istio website and the Hello World was an experiment to proof the concept and get an app working with my own domain name.
+The Bookinfo example was taken from the Istio website, and the Hello World was an experiment to proof the concept and get an app working with my own domain name.
 
 In my case, the MicroK8s cluster sits on vms in my server behind a PFSense router. So the domain name was configured to use my wan address, which is redirected by PFSense into the ip shown by the following command:
 ``` 
