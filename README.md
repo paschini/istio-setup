@@ -4,7 +4,7 @@ Apart from enabling Istio, Ingress, DNS and MetalLB on your MicroK8s cluster, yo
 
 The Bookinfo example was taken from the Istio website and the Hello World was an experiment to proof the concept and get an app working with my own domain name.
 
-In my case, the MicroK8s cluster sits on vms in my server behind a PFsense router. So the domain name was configured to use my wan address, which is redirected by PFsense into the ip shown by the foillowing command:
+In my case, the MicroK8s cluster sits on vms in my server behind a PFSense router. So the domain name was configured to use my wan address, which is redirected by PFSense into the ip shown by the following command:
 ``` 
     $ kubectl get svc istio-ingressgateway -n istio-system 
 ```
